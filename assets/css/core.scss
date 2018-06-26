@@ -4,6 +4,12 @@ $ma-roze-hover: #CD2076;
 $border-radius: 2px;
 $grijs: #DCDCDC;
 
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
 
 body {
@@ -11,6 +17,7 @@ body {
   padding: 0;
   color: #fff !important;
   font-family: 'Quicksand', sans-serif !important;
+  overflow: hidden;
 }
 
 h1,h2,h3,h4,h5 {
@@ -66,6 +73,16 @@ span {
     }
 }
 
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 0;
+  transition: all 2s;
+  opacity: 0;
+}
+
 .logo {
   position: fixed;
   top: 0;
@@ -99,122 +116,16 @@ span {
   text-align: center;
   position: relative;
   z-index: 6;
-  -webkit-animation: bounce-in-top 1.1s both;
-	        animation: bounce-in-top 1.1s both;
   transition: 2s;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .nieuweHeight {
-  min-height: 450px;
+  min-height: 470px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-@-webkit-keyframes bounce-in-top {
-  0% {
-    -webkit-transform: translateY(-500px);
-            transform: translateY(-500px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  38% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    -webkit-transform: translateY(-65px);
-            transform: translateY(-65px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  72% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  81% {
-    -webkit-transform: translateY(-28px);
-            transform: translateY(-28px);
-    -webkit-animation-timing-function: ease-in;
-  }
-  90% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  95% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-}
-@keyframes bounce-in-top {
-  0% {
-    -webkit-transform: translateY(-500px);
-            transform: translateY(-500px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  38% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    -webkit-transform: translateY(-65px);
-            transform: translateY(-65px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  72% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  81% {
-    -webkit-transform: translateY(-28px);
-            transform: translateY(-28px);
-    -webkit-animation-timing-function: ease-in;
-  }
-  90% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  95% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-}
-
 
 .formulier-content:before {
   background: url(../images/hoekjes.png) center center no-repeat;
@@ -235,7 +146,7 @@ span {
   height: 100px;
   display: inline-block;
   position: absolute;
-  bottom: -27px;
+  bottom: -46px;
   left: -26px;
 }
 
@@ -258,7 +169,6 @@ span {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-size: 24px;
-  margin-top: -12px;
   font-weight: 700;
 }
 
@@ -324,10 +234,11 @@ span {
   background: #fff;
   border-radius: 2px;
   width: calc(100% - 20px);
-  min-height: 430px;
+  min-height: 450px;
   position: relative;
   top: 10px !important;
   color: $ma-zwart;
+  overflow-x: hidden;
   display: none;
   transition: display 1s, opacity 1s ease-in;
   opacity: 0;
@@ -347,6 +258,9 @@ span {
   line-height: 50px;
   text-align: center;
   margin-top: 10px;
+  position: relative;
+  transition: all 1s;
+  left: 0%;
 }
 
 .stappen-proces .lijn {
@@ -374,20 +288,99 @@ span {
 .stappen-proces .stap-dot.actief {border: 3px solid $ma-roze !important;}
 
 form {
-  overflow: hidden;
   width: calc(100% - 95px);
   margin: 0 auto;
+  overflow-x: hidden !important;
+  overflow-y: hidden;
 }
 
 form fieldset {
-  height: 350px;
+  height: 400px;
   width: 100%;
+  visibility: hidden;
+  opacity: 0;
 }
 
-.start-pistool {
+#stap1 {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.start-pistool-svg {
   height: 80px;
+  margin: 10px auto;
+  display: block;
+}
+
+.start-pijltje-svg {
+  height: 80px;
+  margin: 10px auto 0px;
+  display: block;
+  transform: rotate(90deg);
+  position: relative;
+  left: -10px;
+}
+
+.opleiding-svg {
+  height: 80px;
+  margin: 10px auto;
+  display: block;
+  margin-top: 50px;
+}
+
+.overgangsbewijs-svg {
+  height: 60px;
+  margin: 20px auto 0px;
+  display: block;
+}
+
+.toelichting-svg {
+  height: 70px;
+  margin: 20px auto 0px;
+  display: block;
+}
+
+.vraagteken-svg {
+  height: 13px;
+  top: 5px;
+  left: 113px;
+  position: absolute;
+}
+
+.uw-gegevens-svg {
+  height: 80px;
+  margin: 20px auto 0px;
+  display: block;
+}
+
+.geslacht-svg {
+  height: 80px;
+  margin: 20px auto 0px;
+  display: block;
+}
+
+.geslacht-man-svg {
   margin: 0 auto;
   display: block;
+  height: 70px;
+}
+
+.geslacht-vrouw-svg {
+  margin: 0 auto;
+  display: block;
+  height: 70px;
+}
+
+.school-svg {
+  margin: 0 auto;
+  display: block;
+  height: 50px;
+}
+
+.telefonisch-contact-svg {
+  margin: 20px auto 0px;
+  display: block;
+  height: 70px;
 }
 
 .start-tekst {
@@ -396,7 +389,7 @@ form fieldset {
   text-shadow: none;
   font-size: 20px;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 #stap1 {
@@ -406,34 +399,101 @@ form fieldset {
 
 #stap2 {
   position: relative;
-  margin-top: -350px;
+  margin-top: -400px;
   left: 100%;
+}
+
+#stap3 {
+  position: relative;
+  margin-top: -400px;
+  left: 100%;
+}
+
+#stap4 {
+  position: relative;
+  margin-top: -400px;
+  left: 100%;
+}
+
+#afronden-1 {
+  position: relative;
+  margin-top: -400px;
+  left: 100%;
+}
+
+#afronden-2 {
+  position: relative;
+  margin-top: -400px;
+  left: 100%;
+}
+
+#afronden-3 {
+  position: relative;
+  margin-top: -400px;
+  left: 100%;
+}
+
+#afronden-4 {
+  position: relative;
+  margin-top: -400px;
+  left: 100%;
+}
+
+
+.buttons {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
 }
 
 .btn-roze {
   background: $ma-roze;
   color: #fff;
-  display: block !important;
-  margin: 25px auto !important;
+  display: inline-block !important;
+  margin: 0px auto !important;
   outline: none !important;
   position: relative;
   z-index: 2;
   outline: none !important;
+  min-width: 124px;
 }
 
 .btn:focus, .btn:active {
   box-shadow: none !important;
 }
 
+.btn-grijze-outline {
+  background: #fff;
+  border: 1px solid $grijs !important;
+  color: #333;
+  display: inline-block;
+  margin-right: 9px;
+  min-width: 124px;
+  z-index: 2;
+}
+
+img.vorige-svg {
+  vertical-align: 0px;
+  margin-right: 5px;
+  height: 10px;
+}
+
+img.volgende-svg {
+  vertical-align: 0px;
+  margin-left: 5px;
+  height: 10px;
+}
+
 /* Inputs css */
 
-input[type="text"], input[type="date"] {
+input[type="text"], input[type="number"], input[type="email"] {
   border-bottom: 2px solid $grijs;
   border-left: 0;
   border-right: 0;
   border-top: 0;
   outline: none;
   transition: all 300ms;
+  @include border-radius(0px);
   width: 100%;
   padding: 10px;
   padding-left: 40px;
@@ -473,14 +533,399 @@ form label i {
 form label {
   position: relative;
 }
+
+.custom-select2 {
+  position: relative;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+}
+.custom-select2 select {
+  display: none;
+}
+.select-selected {
+      color: #333 !important;
+      padding: 10px 16px;
+      border-bottom: 2px solid $grijs !important;
+      cursor: pointer;
+      text-align: left !important;
+      user-select: none;
+      -webkit-transition: 300ms;
+      width: 265px !important;
+      -moz-transition: 300ms;
+      -ms-transition: 300ms;
+      -o-transition: 300ms;
+      transition: 300ms;
+}
+
+.select-arrow-active {
+  border-bottom: 2px solid $ma-roze !important;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+.select-items div,.select-selected {
+  padding: 10px 16px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  text-align: left;
+  border-bottom: 1px solid #C3247B;
+  padding-left: 45px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.select-items {
+  position: absolute;
+  background-color: $ma-roze;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transition: all 300ms;
+  width: 265px;
+}
+
+.select-items div {
+  padding-left: 20px !important;
+  transition: all 300ms;
+}
+
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: $ma-roze-hover;
+}
+
+.opleiding-icoon {
+  position: absolute;
+  left: 6px;
+  top: 15px;
+  height: 35px;
+}
+
+.overgangsbewijs-input, .anders-opleiding-input {
+  width: 100%;
+}
+
+input.anders-opleiding-input {
+  padding-left: 45px;
+}
+
 /* Inputs css einde */
 
 .vliegWeg {
   left: -100% !important;
   transition: all 1s;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+.vliegWegRechts {
+  left: 100% !important;
+  transition: all 1s;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
 .vliegIn {
   left: 0% !important;
   transition: all 1s;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
+
+.opleiding-leeg {
+  height: 0px;
+  visibility: hidden;
+}
+
+.opleiding-optie {
+    position: absolute;
+    top: 50px;
+    padding-top: 5px;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    -webkit-transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    -ms-transition: opacity 300ms;
+    -o-transition: opacity  300ms;
+    transition: opacity 300ms;
+}
+
+.laten-zien {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.weghalen {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+}
+
+.aanvullende-informatie {
+  min-height: 25px;
+  margin-top: -35px;
+  position: relative;
+}
+
+.aanvullende-informatie span {
+  text-shadow: none;
+  font-size: 16px;
+  box-sizing: content-box;
+  position: relative;
+}
+
+/* Checkbox CSS */
+  @import "checkboxes.min.css";
+
+  .checkbox-row {
+    display: block;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .checkbox-groep {
+    width: 100%;
+    display: block;
+    float: left;
+    margin-bottom: 15px;
+  }
+
+  .checkbox-groep3 {
+    float: left;
+    margin-top: 15px;
+  }
+
+  .checkbox-groep4 {
+    margin-left: 10px;
+    float: left;
+    width: 100%;
+    display: block;
+  }
+
+  .checkbox-groep5{
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+    display: block;
+  }
+
+  .mvi-checkbox {
+    width: 65px !important;
+  }
+
+  .mvi-checkbox2 {
+    width: 65px;
+    float: right;
+    margin-top: -35px;
+    position: relative;
+    right: -8px;
+  }
+
+  .checkbox-bbl {
+    right: 57px;
+    top: 35px;
+  }
+
+  .keuzevak {
+    width: 50%;
+    text-align: left;
+    margin-left: 10px;
+    float: left;
+  }
+
+/* Einde Checkbox CSS */
+
+label.diploma {
+  margin-left: 0px;
+  width: 100%;
+  margin-top: -6px;
+  font-size: 14px;
+}
+
+.opleiding-1-input {
+  height: 0;
+  overflow: none;
+}
+
+#opleiding-1-input {
+  padding-top: 40px !important;
+}
+
+.prestaties-2-3 {
+  width: calc(100% - 140px);
+  display: inline-block;
+  float: left;
+  position: relative;
+  text-align: left;
+  min-height: 1px;
+  margin-top: 5px;
+}
+
+.prestaties-1-3 {
+  width: 130px;
+  display: inline-block;
+  float: left;
+  position: relative;
+  right: -10px;
+  margin-top: 5px;
+}
+
+.prestaties-1-3 span.beoordeling {
+  text-shadow: none;
+  color: #333;
+  position: relative;
+  width: 27px;
+  font-size: 18px;
+  margin-left: 0px;
+  display: inline-block;
+  text-align: center;
+}
+
+.beoordeling-checkbox {
+  margin-bottom: 0;
+  margin-left: 7px !important;
+  width: auto !important;
+}
+
+/* Tooltip CSS */
+@import "balloon.scss";
+
+[data-balloon][data-balloon-length='small']:after {
+    white-space: normal;
+    width: 128px;
+}
+/* Einde tooltip CSS */
+
+.bijzonderheden-checkbox {
+  width: 60px !important;
+  position: relative;
+  right: -12px;
+}
+
+.geslachten {
+  width: 100%;
+  min-height: 40px;
+  float: left;
+  display: block;
+  margin-top: 20px;
+}
+
+.geslachten label {
+  margin-left: 54px;
+    margin-top: 15px;
+}
+
+.geslachten .geslacht {
+  width: 50%;
+  float: left;
+  display: inline-block;
+  text-align: center;
+}
+
+.suggestie-plaats {
+  text-align: left;
+  padding-left: 20px;
+}
+
+#txtHint {
+  color: #333;
+  text-shadow: none;
+  font-weight: 500;
+}
+
+.contact-gewenst {
+  width: 100%;
+  display: block;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 45px;
+  margin-top: 20px;
+}
+
+.contact-gewenst .mui-checkbox {
+  width: 35%;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+  .formulier-content:before {
+    display: none !important;
+    visibility: hidden;
+  }
+
+  .formulier-content:after {
+    display: none !important;
+    visibility: hidden;
+  }
+
+  .logo {
+    display: none !important;
+  }
+
+  .nm-logo {
+    display: none !important;
+  }
+
+  .formulier-content {
+    width: 100vw;
+    min-height: 50vh;
+    text-align: center;
+    position: relative;
+    z-index: 6;
+    transition: 2s;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form {
+  width: 100% !important;
+  min-height: 50vh !important;
+  top: 0px !important;
+  border-radius: 2px !important;
+
+}
+
+form {
+  width: calc(100% - 55px) !important;
+}
+
+.pijltje {
+    width: 80px;
+    transform: scaleX(-1) rotate(100deg);
+    float: right;
+    position: absolute;
+    top: 85px;
+    right: 15px;
+}
+
+
+
+}
+
+
+@import "mobiel.scss";
