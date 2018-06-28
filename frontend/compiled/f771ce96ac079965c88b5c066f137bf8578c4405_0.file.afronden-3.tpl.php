@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-06-12 15:56:15
+/* Smarty version 3.1.30, created on 2018-06-28 11:38:57
   from "C:\Users\Nick\Desktop\Bewijzenmap\Inlichtingformulier\frontend\afronden-3.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5b1fd0ff582b32_35035289',
+  'unifunc' => 'content_5b34acb1edf8b3_13307995',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f771ce96ac079965c88b5c066f137bf8578c4405' => 
     array (
       0 => 'C:\\Users\\Nick\\Desktop\\Bewijzenmap\\Inlichtingformulier\\frontend\\afronden-3.tpl',
-      1 => 1528811773,
+      1 => 1530178567,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b1fd0ff582b32_35035289 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b34acb1edf8b3_13307995 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <fieldset id="afronden-3">
 
@@ -28,17 +28,17 @@ function content_5b1fd0ff582b32_35035289 (Smarty_Internal_Template $_smarty_tpl)
   <span class="start-tekst">School informatie</span>
   <label for="functie">
     <i class="fa fa-graduation-cap"></i>
-    <input name="functie" type="text" placeholder="Uw functie" autocomplete="off" spellcheck="false" required/>
+    <input name="uw_functie" type="text" placeholder="Uw functie" autocomplete="off" spellcheck="false" />
   </label>
 
   <label for="schoolnaam">
     <i class="fa fa-building-o"></i>
-    <input name="schoolnaam" type="text" placeholder="Naam van de school" autocomplete="off" spellcheck="false" required/>
+    <input name="naam_school" type="text" placeholder="Naam van de school" autocomplete="off" spellcheck="false" />
   </label>
 
   <label for="schoolplaats">
     <i class="fa fa-map-marker"></i>
-    <input id="schoolplaats" onkeyup="showHint(this.value)" name="schoolplaats" type="text" placeholder="Plaats van de school" autocomplete="off" spellcheck="false" required/>
+    <input name="plaats_school" id="schoolplaats" onkeyup="showHint(this.value)" name="schoolplaats" type="text" placeholder="Plaats van de school" autocomplete="off" spellcheck="false" />
   </label>
 
 <div class="suggestie-plaats">

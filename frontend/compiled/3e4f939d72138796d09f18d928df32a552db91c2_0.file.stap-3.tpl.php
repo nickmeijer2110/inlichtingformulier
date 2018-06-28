@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-06-12 11:21:21
+/* Smarty version 3.1.30, created on 2018-06-28 11:38:57
   from "C:\Users\Nick\Desktop\Bewijzenmap\Inlichtingformulier\frontend\stap-3.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5b1f90916129c3_33621122',
+  'unifunc' => 'content_5b34acb1bbbe43_02954517',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3e4f939d72138796d09f18d928df32a552db91c2' => 
     array (
       0 => 'C:\\Users\\Nick\\Desktop\\Bewijzenmap\\Inlichtingformulier\\frontend\\stap-3.tpl',
-      1 => 1528795260,
+      1 => 1530177747,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b1f90916129c3_33621122 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b34acb1bbbe43_02954517 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <fieldset id="stap3">
   <div class="prestaties-2-3"></div>
@@ -36,25 +36,25 @@ function content_5b1f90916129c3_33621122 (Smarty_Internal_Template $_smarty_tpl)
     <div class="checkbox-groep6">
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="concentratie-goed" type="checkbox" value="">
+        <input name="concentratie[]" id="concentratie-goed" type="checkbox" value="goed">
         <label for="concentratie-goed">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="concentratie-voldoende" type="checkbox" value="" checked>
+        <input name="concentratie[]" id="concentratie-voldoende" type="checkbox" value="voldoende" checked>
         <label for="concentratie-voldoende">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="concentratie-matig" type="checkbox" value="">
+        <input name="concentratie[]" id="concentratie-matig" type="checkbox" value="matig">
         <label for="concentratie-matig">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="concentratie-onvoldoende" type="checkbox" value="">
+        <input name="concentratie[]" id="concentratie-onvoldoende" type="checkbox" value="onvoldoende">
         <label for="concentratie-onvoldoende">
         </label>
       </div>
@@ -68,25 +68,25 @@ function content_5b1f90916129c3_33621122 (Smarty_Internal_Template $_smarty_tpl)
     <div class="checkbox-groep7">
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="werktempo-goed" type="checkbox" value="">
+        <input name="werktempo[]" id="werktempo-goed" type="checkbox" value="goed">
         <label for="werktempo-goed">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="werktempo-voldoende" type="checkbox" value="" checked>
+        <input name="werktempo[]" id="werktempo-voldoende" type="checkbox" value="voldoende" checked>
         <label for="werktempo-voldoende">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="werktempo-matig" type="checkbox" value="">
+        <input name="werktempo[]" id="werktempo-matig" type="checkbox" value="matig">
         <label for="werktempo-matig">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="werktempo-onvoldoende" type="checkbox" value="">
+        <input name="werktempo[]" id="werktempo-onvoldoende" type="checkbox" value="onvoldoende">
         <label for="werktempo-onvoldoende">
         </label>
       </div>
@@ -100,25 +100,25 @@ function content_5b1f90916129c3_33621122 (Smarty_Internal_Template $_smarty_tpl)
     <div class="checkbox-groep8">
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="zelfstandig-goed" type="checkbox" value="">
+        <input name="zelfstandig[]" id="zelfstandig-goed" type="checkbox" value="goed">
         <label for="zelfstandig-goed">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="zelfstandig-voldoende" type="checkbox" value="" checked>
+        <input name="zelfstandig[]" id="zelfstandig-voldoende" type="checkbox" value="voldoende" checked>
         <label for="zelfstandig-voldoende">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="zelfstandig-matig" type="checkbox" value="">
+        <input name="zelfstandig[]" id="zelfstandig-matig" type="checkbox" value="matig">
         <label for="zelfstandig-matig">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="zelfstandig-onvoldoende" type="checkbox" value="">
+        <input name="zelfstandig[]" id="zelfstandig-onvoldoende" type="checkbox" value="onvoldoende">
         <label for="zelfstandig-onvoldoende">
         </label>
       </div>
@@ -132,25 +132,25 @@ function content_5b1f90916129c3_33621122 (Smarty_Internal_Template $_smarty_tpl)
     <div class="checkbox-groep9">
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="motivatie-goed" type="checkbox" value="">
+        <input name="motivatie[]" id="motivatie-goed" type="checkbox" value="goed">
         <label for="motivatie-goed">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="motivatie-voldoende" type="checkbox" value="" checked>
+        <input name="motivatie[]" id="motivatie-voldoende" type="checkbox" value="voldoende" checked>
         <label for="motivatie-voldoende">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="motivatie-matig" type="checkbox" value="">
+        <input name="motivatie[]" id="motivatie-matig" type="checkbox" value="matig">
         <label for="motivatie-matig">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="motivatie-onvoldoende" type="checkbox" value="">
+        <input name="motivatie[]" id="motivatie-onvoldoende" type="checkbox" value="onvoldoende">
         <label for="motivatie-onvoldoende">
         </label>
       </div>
@@ -164,25 +164,25 @@ function content_5b1f90916129c3_33621122 (Smarty_Internal_Template $_smarty_tpl)
     <div class="checkbox-groep10">
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="wilskracht-goed" type="checkbox" value="">
+        <input name="wilskracht[]" id="wilskracht-goed" type="checkbox" value="goed">
         <label for="wilskracht-goed">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="wilskracht-voldoende" type="checkbox" value="" checked>
+        <input name="wilskracht[]" id="wilskracht-voldoende" type="checkbox" value="voldoende" checked>
         <label for="wilskracht-voldoende">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="wilskracht-matig" type="checkbox" value="">
+        <input name="wilskracht[]" id="wilskracht-matig" type="checkbox" value="matig">
         <label for="wilskracht-matig">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="wilskracht-onvoldoende" type="checkbox" value="">
+        <input name="wilskracht[]" id="wilskracht-onvoldoende" type="checkbox" value="onvoldoende">
         <label for="wilskracht-onvoldoende">
         </label>
       </div>
@@ -196,25 +196,25 @@ function content_5b1f90916129c3_33621122 (Smarty_Internal_Template $_smarty_tpl)
     <div class="checkbox-groep11">
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="communicatief-goed" type="checkbox" value="">
+        <input name="communicatief[]" id="communicatief-goed" type="checkbox" value="goed">
         <label for="communicatief-goed">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="communicatief-voldoende" type="checkbox" value="" checked>
+        <input name="communicatief[]" id="communicatief-voldoende" type="checkbox" value="voldoende" checked>
         <label for="communicatief-voldoende">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="communicatief-matig" type="checkbox" value="">
+        <input name="communicatief[]" id="communicatief-matig" type="checkbox" value="matig">
         <label for="communicatief-matig">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="communicatief-onvoldoende" type="checkbox" value="">
+        <input name="communicatief[]" id="communicatief-onvoldoende" type="checkbox" value="onvoldoende">
         <label for="communicatief-onvoldoende">
         </label>
       </div>
@@ -228,25 +228,25 @@ function content_5b1f90916129c3_33621122 (Smarty_Internal_Template $_smarty_tpl)
     <div class="checkbox-groep12">
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="sociaal-goed" type="checkbox" value="">
+        <input name="sociaal[]" id="sociaal-goed" type="checkbox" value="goed">
         <label for="sociaal-goed">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="sociaal-voldoende" type="checkbox" value="" checked>
+        <input name="sociaal[]" id="sociaal-voldoende" type="checkbox" value="voldoende" checked>
         <label for="sociaal-voldoende">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="sociaal-matig" type="checkbox" value="">
+        <input name="sociaal[]" id="sociaal-matig" type="checkbox" value="matig">
         <label for="sociaal-matig">
         </label>
       </div>
 
       <div class="mui-checkbox beoordeling-checkbox">
-        <input id="sociaal-onvoldoende" type="checkbox" value="">
+        <input name="sociaal[]" id="sociaal-onvoldoende" type="checkbox" value="onvoldoende">
         <label for="sociaal-onvoldoende">
         </label>
       </div>
@@ -257,7 +257,7 @@ function content_5b1f90916129c3_33621122 (Smarty_Internal_Template $_smarty_tpl)
 
   <label class="anders-opleiding-input" for="anders-opleiding">
     <i class="fa fa-commenting-o"></i>
-    <input class="anders-opleiding-input" placeholder="Toelichting (niet verplicht)" type="text" autocomplete="off" spellcheck="false" required/>
+    <input name="skills_toelichting" class="anders-opleiding-input" placeholder="Toelichting (niet verplicht)" type="text" autocomplete="off" spellcheck="false" />
   </label>
 
   <div class="buttons">

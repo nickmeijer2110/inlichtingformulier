@@ -7,7 +7,7 @@
       <img class="geslacht-man-svg" src="assets/images/geslacht-man.svg" />
 
       <div class="mui-checkbox geslacht-man-checkbox">
-        <input id="geslacht-man geslacht-man-checkbox" type="checkbox" value="">
+        <input name="uw_geslacht[]" id="geslacht-man geslacht-man-checkbox" type="checkbox" value="man">
         <label for="geslacht-man geslacht-man-checkbox">
 
         </label>
@@ -18,7 +18,7 @@
       <img class="geslacht-vrouw-svg" src="assets/images/geslacht-vrouw.svg" />
 
       <div class="mui-checkbox">
-        <input id="geslacht-vrouw" type="checkbox" value="">
+        <input name="uw_geslacht[]" id="geslacht-vrouw" type="checkbox" value="vrouw">
         <label for="geslacht-vrouw">
 
         </label>

@@ -5,14 +5,14 @@
     <div class="checkbox-groep13">
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="speciaalonderwijs-ja" type="checkbox" value="">
+        <input name="speciaal_onderwijs[]" id="speciaalonderwijs-ja" type="checkbox" value="ja">
         <label for="speciaalonderwijs-ja">
           Ja
         </label>
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="speciaalonderwijs-nee" type="checkbox" value="">
+        <input name="speciaal_onderwijs[]" id="speciaalonderwijs-nee" type="checkbox" value="nee">
         <label for="speciaalonderwijs-nee">
           Nee
         </label>
@@ -27,14 +27,14 @@
     <div class="checkbox-groep14">
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="dyslexie-ja" type="checkbox" value="">
+        <input name="dyslexie[]" id="dyslexie-ja" type="checkbox" value="ja">
         <label for="dyslexie-ja">
           Ja
         </label>
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="dyslexie-nee" type="checkbox" value="">
+        <input name="dyslexie[]" id="dyslexie-nee" type="checkbox" value="nee">
         <label for="dyslexie-nee">
           Nee
         </label>
@@ -49,14 +49,14 @@
     <div class="checkbox-groep15">
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="dyscalculie-ja" type="checkbox" value="">
+        <input name="dyscalculie[]" id="dyscalculie-ja" type="checkbox" value="ja">
         <label for="dyscalculie-ja">
           Ja
         </label>
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="dyscalculie-nee" type="checkbox" value="">
+        <input name="dyscalculie[]" id="dyscalculie-nee" type="checkbox" value="nee">
         <label for="dyscalculie-nee">
           Nee
         </label>
@@ -71,14 +71,14 @@
     <div class="checkbox-groep16">
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="adhd-ja" type="checkbox" value="">
+        <input name="adhd[]" id="adhd-ja" type="checkbox" value="ja">
         <label for="adhd-ja">
           Ja
         </label>
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="adhd-nee" type="checkbox" value="">
+        <input name="adhd[]" id="adhd-nee" type="checkbox" value="nee">
         <label for="adhd-nee">
           Nee
         </label>
@@ -93,14 +93,14 @@
     <div class="checkbox-groep17">
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="slechthorendheid-ja" type="checkbox" value="">
+        <input name="slechthorendheid[]" id="slechthorendheid-ja" type="checkbox" value="ja">
         <label for="slechthorendheid-ja">
           Ja
         </label>
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="slechthorendheid-nee" type="checkbox" value="">
+        <input name="slechthorendheid[]" id="slechthorendheid-nee" type="checkbox" value="nee">
         <label for="slechthorendheid-nee">
           Nee
         </label>
@@ -115,14 +115,14 @@
     <div class="checkbox-groep18">
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="suikerziekte-ja" type="checkbox" value="">
+        <input name="suikerziekte[]" id="suikerziekte-ja" type="checkbox" value="ja">
         <label for="suikerziekte-ja">
           Ja
         </label>
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="suikerziekte-nee" type="checkbox" value="">
+        <input name="suikerziekte[]" id="suikerziekte-nee" type="checkbox" value="nee">
         <label for="suikerziekte-nee">
           Nee
         </label>
@@ -139,14 +139,14 @@
     <div class="checkbox-groep19">
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="zatbesproken-ja" type="checkbox" value="">
+        <input name="zat[]" id="zatbesproken-ja" type="checkbox" value="ja">
         <label for="zatbesproken-ja">
           Ja
         </label>
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="zatbesproken-nee" type="checkbox" value="">
+        <input name="zat[]" id="zatbesproken-nee" type="checkbox" value="nee">
         <label for="zatbesproken-nee">
           Nee
         </label>
@@ -161,14 +161,14 @@
     <div class="checkbox-groep20">
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="overige-ja" type="checkbox" value="">
+        <input name="overige[]" id="overige-ja" type="checkbox" value="ja">
         <label for="overige-ja">
           Ja
         </label>
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input id="overige-nee" type="checkbox" value="">
+        <input name="overige[]" id="overige-nee" type="checkbox" value="nee">
         <label for="overige-nee">
           Nee
         </label>

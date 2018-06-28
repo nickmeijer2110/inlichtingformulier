@@ -5,12 +5,12 @@
 
   <label for="naam">
     <i class="fa fa-user-o"></i>
-    <input name="naam" type="text" placeholder="Naam leerling" autofocus autocomplete="off" spellcheck="false" required/>
+    <input name="naam_leerling" type="text" placeholder="Naam leerling" autofocus autocomplete="off" spellcheck="false"/>
   </label>
 
   <label for="datum">
     <i class="fa fa-calendar-o"></i>
-    <input placeholder="Geboortedatum leerling" type="text" autocomplete="off" spellcheck="false" required/>
+    <input name="gebdatum_leerling" placeholder="Geboortedatum leerling" type="text" autocomplete="off" spellcheck="false"/>
   </label>
 
   <img class="start-pijltje-svg" src="assets/images/start-pijltje.svg" />

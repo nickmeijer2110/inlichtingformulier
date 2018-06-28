@@ -25,7 +25,7 @@
   $formulier->display('stappen-dots.tpl');
 
   // Start formulier
-  echo '<form method="POST">';
+  echo '<form method="POST" novalidate>';
 
   // Formulier: leerling gegevens
   $formulier->display('stap-1.tpl');

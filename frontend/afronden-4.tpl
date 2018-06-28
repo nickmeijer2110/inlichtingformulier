@@ -1,7 +1,7 @@
 <fieldset id="afronden-4">
   <label for="telefoonnummer">
     <i class="fa fa-phone"></i>
-    <input name="telefoonnummer" type="text" placeholder="Uw telefoonnummer" autocomplete="off" spellcheck="false" required/>
+    <input name="uw_telefoonnummer" type="text" placeholder="Uw telefoonnummer" autocomplete="off" spellcheck="false"/>
   </label>
   <img class="telefonisch-contact-svg" src="assets/images/contact.svg" />
   <span class="start-tekst">Is telefonisch contact gewenst?</span>
@@ -10,14 +10,14 @@
 
 
     <div class="mui-checkbox">
-      <input id="contact-gewenst" type="checkbox" value="">
+      <input name="contact_gewenst[]" id="contact-gewenst" type="checkbox" value="ja">
       <label for="contact-gewenst">
         Ja
       </label>
     </div>
 
     <div class="mui-checkbox">
-      <input id="contact-nietgewenst" type="checkbox" value="">
+      <input name="contact_gewenst[]" id="contact-nietgewenst" type="checkbox" value="nee">
       <label for="contact-nietgewenst">
         Nee
       </label>
@@ -31,9 +31,6 @@
       Vorige
     </button>
 
-    <button tabindex="-1" type="button" id="afronden-knop-2" class="btn btn-roze">
-      Afronden
-      <img class="volgende-svg" src="assets/images/afronden.svg" />
-    </button>
+    <input name="afronden" tabindex="-1" type="submit" value="Afronden" id="afronden-knop-2" class="btn btn-roze">
   </div>
 </fieldset>

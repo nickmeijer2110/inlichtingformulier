@@ -4,12 +4,12 @@
 
 <label for="naam">
   <i class="fa fa-user-o"></i>
-  <input name="naam" type="text" placeholder="Uw naam" autofocus autocomplete="off" spellcheck="false" required/>
+  <input name="uw_naam" type="text" placeholder="Uw naam" autofocus autocomplete="off" spellcheck="false"/>
 </label>
 
 <label for="email">
   <i class="fa fa-envelope-o"></i>
-  <input name="email" type="email" placeholder="Uw e-mail adres" autofocus autocomplete="off" spellcheck="false" required/>
+  <input name="uw_email" type="email" placeholder="Uw e-mail adres" autocomplete="off" spellcheck="false"/>
 </label>
 
 <div class="buttons">
