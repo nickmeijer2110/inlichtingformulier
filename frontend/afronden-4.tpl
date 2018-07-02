@@ -31,6 +31,12 @@
       Vorige
     </button>
 
-    <input name="afronden" tabindex="-1" type="submit" value="Afronden" id="afronden-knop-2" class="btn btn-roze">
+    <button tabindex="-1" name="submit" type="submit" id="submit" class="btn btn-roze">
+      Afronden
+      <img class="volgende-svg" src="assets/images/volgende.svg" />
+    </button>
+    <!-- <button name="submit" tabindex="-1" type="submit" value="Afronden" id="submit" class="btn btn-roze">
+
+    </button> -->
   </div>
 </fieldset>

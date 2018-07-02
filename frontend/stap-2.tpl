@@ -219,14 +219,14 @@
         Leerweg
       </div>
       <div class="mui-checkbox mvi-checkbox">
-        <input name="mbo_leerweg[]" id="leerweg-bol" type="checkbox" value="">
+        <input name="mbo_leerweg[]" id="leerweg-bol" type="checkbox" value="bol">
         <label for="leerweg-bol">
           BOL
         </label>
       </div>
 
       <div class="mui-checkbox mvi-checkbox2 checkbox-bbl">
-        <input name="mbo_leerweg[]" id="leerweg-bbl" type="checkbox" value="">
+        <input name="mbo_leerweg[]" id="leerweg-bbl" type="checkbox" value="bbl">
         <label for="leerweg-bbl">
           BBL
         </label>
