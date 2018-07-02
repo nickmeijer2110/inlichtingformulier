@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {width:6px;height:12px}
+::-webkit-scrollbar-track {background:$grijs;}
+::-webkit-scrollbar-thumb {background:$ma-roze;}
+
 h1,h2,h3,h4 {
   text-transform: uppercase;
   text-shadow: 2px 2px 15px #000;
@@ -100,6 +104,7 @@ span {
   display: block;
   width: 150px;
   margin-top: 20px;
+	margin-left: 45px;
 }
 
 .center {
@@ -1249,6 +1254,7 @@ form {
 	opacity: 0;
 	visibility: hidden;
 	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
   max-height: 45vh !important;
 }
 
@@ -1262,6 +1268,11 @@ form {
 	display: block;
 	opacity: 1;
 	visibility: visible;
+}
+
+.afgerond-naam {
+	text-shadow: none !important;
+	color: #333;
 }
 
 @import "mobiel.scss";
