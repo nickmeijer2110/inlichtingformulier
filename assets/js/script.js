@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 
+$("#top-div-weg").remove();
 
   $( "#invullen-knop" ).click(function() {
     $("#formulier").delay(500).fadeOut(1000);
@@ -35,7 +36,8 @@ $("#terug-naar-1").click(function() {
     $("#stap1").addClass("vliegIn");
     $(".dot-2").removeClass("actief");
     $(".dot-1").addClass("actief");
-  }, 1000);
+    $('title').html("Stap 1 - Inlichtingenformulier");
+  }, 10);
 });
 
 $("#naar-stap-2").click(function() {
@@ -46,7 +48,8 @@ $("#naar-stap-2").click(function() {
     $("#stap2").addClass("vliegIn");
     $(".dot-1").removeClass("actief");
     $(".dot-2").addClass("actief");
-  }, 1000);
+    $('title').html("Stap 2 - Inlichtingenformulier");
+  }, 10);
 });
 
 /* Einde Stap 2 buttons */
@@ -61,7 +64,8 @@ $("#naar-stap-3").click(function() {
     $("#stap3").addClass("vliegIn");
     $(".dot-2").removeClass("actief");
     $(".dot-3").addClass("actief");
-}, 1000);
+    $('title').html("Stap 3 - Inlichtingenformulier");
+}, 10);
 
   setTimeout(function(){
   $("#goed").attr( "data-balloon-visible", "");
@@ -106,7 +110,8 @@ $("#terug-naar-2").click(function() {
     $("#stap2").addClass("vliegIn");
     $(".dot-3").removeClass("actief");
     $(".dot-2").addClass("actief");
-  }, 1000);
+    $('title').html("Stap 2 - Inlichtingenformulier");
+  }, 10);
 });
 
 $("#naar-stap-4").click(function() {
@@ -117,7 +122,8 @@ $("#naar-stap-4").click(function() {
     $("#stap4").addClass("vliegIn");
     $(".dot-3").removeClass("actief");
     $(".dot-4").addClass("actief");
-  }, 1000);
+    $('title').html("Stap 4 - Inlichtingenformulier");
+  }, 10);
 });
 /* Einde Stap 3 buttons */
 
@@ -130,7 +136,8 @@ $("#terug-naar-3").click(function() {
     $("#stap3").addClass("vliegIn");
     $(".dot-4").removeClass("actief");
     $(".dot-3").addClass("actief");
-  }, 1000);
+    $('title').html("Stap 3 - Inlichtingenformulier");
+  }, 10);
 });
 
 
@@ -146,7 +153,8 @@ $("#afronden-knop").click(function() {
     $(".dot-3").removeClass("actief");
     $(".dot-4").removeClass("actief");
     $(".dot-1").addClass("actief");
-  }, 1000);
+    $('title').html("Gegevens 1 - Inlichtingenformulier");
+  }, 10);
 });
 
 $("#naar-afronden-2").click(function() {
@@ -157,7 +165,8 @@ $("#naar-afronden-2").click(function() {
     $("#afronden-2").addClass("vliegIn");
     $(".dot-1").removeClass("actief");
     $(".dot-2").addClass("actief");
-  }, 1000);
+    $('title').html("Gegevens 2 - Inlichtingenformulier");
+  }, 10);
 });
 
 /* Stap 1 einde */
@@ -171,7 +180,8 @@ $("#terug-naar-afronden-1").click(function() {
     $("#afronden-1").addClass("vliegIn");
     $(".dot-2").removeClass("actief");
     $(".dot-1").addClass("actief");
-  }, 1000);
+    $('title').html("Gegevens 1 - Inlichtingenformulier");
+  }, 10);
 });
 
 
@@ -183,7 +193,8 @@ $("#naar-afronden-3").click(function() {
     $("#afronden-3").addClass("vliegIn");
     $(".dot-2").removeClass("actief");
     $(".dot-3").addClass("actief");
-  }, 1000);
+    $('title').html("Gegevens 3 - Inlichtingenformulier");
+  }, 10);
 });
 
 /* Einde stap 2 */
@@ -197,7 +208,8 @@ $("#terug-naar-afronden-2").click(function() {
     $("#afronden-2").addClass("vliegIn");
     $(".dot-3").removeClass("actief");
     $(".dot-2").addClass("actief");
-  }, 1000);
+    $('title').html("Gegevens 2 - Inlichtingenformulier");
+  }, 10);
 });
 
 $("#naar-afronden-4").click(function() {
@@ -208,7 +220,8 @@ $("#naar-afronden-4").click(function() {
     $("#afronden-4").addClass("vliegIn");
     $(".dot-3").removeClass("actief");
     $(".dot-4").addClass("actief");
-  }, 1000);
+    $('title').html("Gegevens 4 - Inlichtingenformulier");
+  }, 10);
 });
 
 /* Einde stap 3 */
@@ -222,9 +235,25 @@ $("#terug-naar-afronden-3").click(function() {
     $("#afronden-3").addClass("vliegIn");
     $(".dot-4").removeClass("actief");
     $(".dot-3").addClass("actief");
-  }, 1000);
+    $('title').html("Gegevens 3 - Inlichtingenformulier");
+  }, 10);
 });
 /* Einde stap 4 */
+
+$("#submit").click(function() {
+  setTimeout(function(){
+    $("#afronden-4").removeClass("vliegIn");
+    $("#afronden-4").addClass("vliegWeg");
+    $("#afgerond").addClass("vliegIn");
+    $(".dot-4").removeClass("actief");
+    $(".dot-1").addClass("dot-afgerond");
+    $(".dot-2").addClass("dot-afgerond");
+    $(".dot-3").addClass("dot-afgerond");
+    $(".dot-4").addClass("dot-afgerond");
+    $('title').html("Afgerond - Inlichtingenformulier");
+    $(".sa-success").removeClass("hide");
+  }, 10);
+});
 
 
 /* Einde afronden buttons */
@@ -268,6 +297,10 @@ $(document).ready(function(){
     }
   });
 
+  $("#submit").click(function() {
+    var uw_naam = $('input[name=uw_naam]').val().split(' ')[0];
+    $('.afgerond-naam').html(uw_naam);
+  });
 
 });
 
