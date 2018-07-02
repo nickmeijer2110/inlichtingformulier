@@ -1,7 +1,5 @@
 <?php
 
-require 'librarys/Smarty.class.php';
-
 // ---------- Beschikbare variablen ----------- //
 
 // $naam_leerling = Naam van de betreffende leerling.
@@ -59,19 +57,7 @@ require 'librarys/Smarty.class.php';
 
 // -------- Beschikbare variablen einde --------- //
 
-error_reporting(0);
-
-// Smarty start.
-// Variable $formulier toekennen.
-
-$formulier = new Smarty();
-
-// Map waar hij de "frontend" gaat ophalen & compilen.
-$formulier->template_dir = "frontend";
-$formulier->compile_dir = "frontend/compiled";
-
-// Configuratie ophalen.
-require 'config/config.php';
+  error_reporting(0);
 
 // Formulier backend.
 
@@ -358,72 +344,68 @@ function veilig($input) {
   }
 
 // Ingevulde formulier gegevens laten zien.
-  echo '<strong>Gegevens leerling</strong> <br/>';
-  echo 'Naam leerling: ' . $naam_leerling . '<br />';
-  echo 'Geboortedatum leerling: ' . $gebdatum_leerling . '<br /></br/>';
+  echo '<p><div><strong>Gegevens leerling</strong> </div></p>';
+  echo '<div>Naam leerling: ' . $naam_leerling . '</div>';
+  echo '<div>Geboortedatum leerling: ' . $gebdatum_leerling . '</div><div></div>';
 
-  echo 'Opleidingsniveau: ' . strtoupper($opleiding_niveau) . '<br />';
+  echo '<div>Opleidingsniveau: ' . strtoupper($opleiding_niveau) . '</div>';
 
   if($opleiding_niveau == "vmbo") {
-    echo 'VMBO Niveau: ' . $vmbo_niveau . '<br />';
-    echo 'VMBO Sector: ' . $vmbo_sector . '<br />';
-    echo 'MVI keuzevak: ' . $mvi_keuzevak . '<br />';
-    echo 'VMBO Diploma (Behaald/Te behalen op): ' . $vmbo_diploma . '<br />';
+    echo '<div>VMBO Niveau: ' . $vmbo_niveau . '</div>';
+    echo '<div>VMBO Sector: ' . $vmbo_sector . '</div>';
+    echo '<div>MVI keuzevak: ' . $mvi_keuzevak . '</div>';
+    echo '<div>VMBO Diploma (Behaald/Te behalen op): ' . $vmbo_diploma . '</div>';
   } elseif($opleiding_niveau == "havo") {
-    echo 'HAVO Diploma (Behaald/Te behalen op): ' . $havo_diploma . '<br />';
-    echo 'HAVO Overgang van: Leerjaar ' . $havo_overgang_van . '<br />';
-    echo 'HAVO Overgang naar: Leerjaar ' . $havo_overgang_naar . '<br />';
+    echo '<div>HAVO Diploma (Behaald/Te behalen op): ' . $havo_diploma . '</div>';
+    echo '<div>HAVO Overgang van: Leerjaar ' . $havo_overgang_van . '</div>';
+    echo '<div>HAVO Overgang naar: Leerjaar ' . $havo_overgang_naar . '</div>';
   } elseif($opleiding_niveau == "vwo") {
-    echo 'VWO Diploma (Behaald/Te behalen op): ' . $vwo_diploma . '<br />';
-    echo 'VWO Overgang van: Leerjaar ' . $vwo_overgang_van . '<br />';
-    echo 'VWO Overgang naar: Leerjaar ' . $vwo_overgang_naar . '<br />';
+    echo '<div>VWO Diploma (Behaald/Te behalen op): ' . $vwo_diploma . '</div>';
+    echo '<div>VWO Overgang van: Leerjaar ' . $vwo_overgang_van . '</div>';
+    echo '<div>VWO Overgang naar: Leerjaar ' . $vwo_overgang_naar . '</div>';
   } elseif($opleiding_niveau == "mbo") {
-    echo 'MBO Niveau: ' . $mbo_niveau . '<br />';
-    echo 'MBO Leerweg: ' . $mbo_leerweg . '<br />';
+    echo '<div>MBO Niveau: ' . $mbo_niveau . '</div>';
+    echo '<div>MBO Leerweg: ' . $mbo_leerweg . '</div>';
   } elseif($opleiding_niveau == "anders") {
-    echo 'Opleiding: ' . $anders_opleiding . '<br />';
-    echo 'Toelichting: ' . $anders_toelichting . '<br />';
+    echo '<div>Opleiding: ' . $anders_opleiding . '</div>';
+    echo '<div>Toelichting: ' . $anders_toelichting . '</div>';
   }
 
-  echo '<br />';
-  echo '<strong>Indruk van de leerling</strong> <br/>';
+  echo '<p><div><strong>Indruk van de leerling</strong> </div></p>';
 
-  echo 'Concentratie: ' . $concentratie . '<br />';
-  echo 'Werktempo: ' . $werktempo . '<br />';
-  echo 'Zelfstandig: ' . $zelfstandig . '<br />';
-  echo 'Motivatie: ' . $motivatie . '<br />';
-  echo 'Wilskracht: ' . $wilskracht . '<br />';
-  echo 'Communicatief: ' . $communicatief . '<br />';
-  echo 'Sociaal: ' . $sociaal . '<br /><br />';
+  echo '<div>Concentratie: ' . $concentratie . '</div>';
+  echo '<div>Werktempo: ' . $werktempo . '</div>';
+  echo '<div>Zelfstandig: ' . $zelfstandig . '</div>';
+  echo '<div>Motivatie: ' . $motivatie . '</div>';
+  echo '<div>Wilskracht: ' . $wilskracht . '</div>';
+  echo '<div>Communicatief: ' . $communicatief . '</div>';
+  echo '<div>Sociaal: ' . $sociaal . '</div><div></div>';
 
   if(!empty($skills_toelichting)) {
-      echo '<strong>Toelichting:</strong> ' . $skills_toelichting . '<br />';
+      echo '<div><strong>Toelichting:</strong> ' . $skills_toelichting . '</div><div></div>';
   }
 
-  echo '<br />';
-  echo '<strong>Bijzonderheden</strong> <br/>';
-  echo 'Speciaal onderwijs: ' . $speciaal_onderwijs . '<br />';
-  echo 'Dyslexie: ' . $dyslexie . '<br />';
-  echo 'Dyscalculie: ' . $dyscalculie . '<br />';
-  echo 'ADHD: ' . $adhd . '<br />';
-  echo 'Slechthorendheid: ' . $slechthorendheid . '<br />';
-  echo 'Suikerziekte: ' . $suikerziekte . '<br />';
-  echo 'Besproken in de ZAT: ' . $zat . '<br />';
-  echo 'Overige: ' . $overige . '<br />';
+  echo '<p><div><strong>Bijzonderheden</strong> </div>  </p>';
+  echo '<div>Speciaal onderwijs: ' . $speciaal_onderwijs . '</div>';
+  echo '<div>Dyslexie: ' . $dyslexie . '</div>';
+  echo '<div>Dyscalculie: ' . $dyscalculie . '</div>';
+  echo '<div>ADHD: ' . $adhd . '</div>';
+  echo '<div>Slechthorendheid: ' . $slechthorendheid . '</div>';
+  echo '<div>Suikerziekte: ' . $suikerziekte . '</div>';
+  echo '<div>Besproken in de ZAT: ' . $zat . '</div>';
+  echo '<div>Overige: ' . $overige . '</div>';
 
-  echo '<br />';
-  echo '<strong>Gegevens Decaan/Mentor</strong> <br/>';
-  echo 'Naam: ' . $uw_naam . '<br />';
-  echo 'Functie: ' . $uw_functie . '<br />';
-  echo 'E-mail adres: ' . $uw_email . '<br />';
-  echo 'Geslacht: ' . $uw_geslacht . '<br />';
-  echo 'Telefoonnummer: ' . $uw_telefoonnummer . '<br />';
-  echo 'Telefonisch contact gewenst: ' . $contact_gewenst . '<br />';
+  echo '<p><div><strong>Gegevens Decaan/Mentor</strong> </div></p>';
+  echo '<div>Naam: ' . $uw_naam . '</div>';
+  echo '<div>Functie: ' . $uw_functie . '</div>';
+  echo '<div>E-mail adres: ' . $uw_email . '</div>';
+  echo '<div>Geslacht: ' . $uw_geslacht . '</div>';
+  echo '<div>Telefoonnummer: ' . $uw_telefoonnummer . '</div>';
+  echo '<div>Telefonisch contact gewenst: ' . $contact_gewenst . '</div>';
 
-  echo '<br />';
-  echo '<strong>School informatie</strong> <br/>';
-  echo 'Naam van de school: ' . $naam_school . '<br />';
-  echo 'Plaats van de school: ' . $plaats_school . '<br />';
+  echo '<p><div><strong>School informatie</strong></div></p>';
+  echo '<div>Naam van de school: ' . $naam_school . '</div>';
+  echo '<div>Plaats van de school: ' . $plaats_school . '</div>';
 
 
  ?>

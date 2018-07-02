@@ -1,13 +1,17 @@
 <?php
 
-  // Elke auto heeft een motor nodig..
+  echo '<!DOCTYPE html><html lang="en">';
+
+  require 'start.php';
+
+  $formulier->display('head.tpl');
+
+  echo '<body>';
+
   echo '<div id="top-div-weg" class="formulier-gegevens">';
   require 'engine.php';
   echo '</div>';
 
-  echo '<!DOCTYPE html><html>';
-  $formulier->display('head.tpl');
-  echo '<body>';
 
   $formulier->display('video-achtergrond.tpl');
   $formulier->display('logo.tpl');
@@ -28,7 +32,7 @@
   $formulier->display('stappen-dots.tpl');
 
   // Start formulier
-  echo '<form id="formulier" action="engine.php" method="post">';
+  echo '<form action="engine.php" method="post">';
 
   // Formulier: leerling gegevens
   $formulier->display('stap-1.tpl');
@@ -51,32 +55,60 @@
 
   $formulier->display('modal.tpl');
   $formulier->display('nm-logo-en-js.tpl');
+
+  ?>
+
+
+  <!-- Submit POST via ajax -->
+
+  <script>
+  $(function () {
+
+    var formulier_data = $('.formulier-gegevens');
+    var html = "";
+
+    $('form').bind('submit', function (event) {
+
+  event.preventDefault();
+
+      $.ajax({
+        type: 'POST',
+        url: 'engine.php',
+        data: $('form').serialize(),
+        success: function (html) {
+          formulier_data.html(html);
+        }
+      });
+
+    });
+  });
+
+  </script>
+
+  <!-- Genereer PDF via jsPDF -->
+
+  <script>
+  $(document).ready(function(){
+    var doc = new jsPDF();
+
+// We'll make our own renderer to skip this editor
+var specialElementHandlers = {
+ '#editor': function(element, renderer){
+   return true;
+ }
+};
+
+   $('#cmd').click(function () {
+       doc.fromHTML($('#formulier-gegevens-pdf').get(0), 15, 15, {
+       'width': 170,
+       'elementHandlers': specialElementHandlers
+     });
+       doc.save('Inlichtingenformulier.pdf');
+     });
+});
+</script>
+
+  <?php
   echo "</body>";
   echo "</html>";
-?>
-
-<!-- Submit POST via ajax -->
-
-<script>
-$(function () {
-
-  var formulier_data = $('.formulier-gegevens');
-  var html = "";
-
-  $('form').bind('submit', function (event) {
-
-event.preventDefault();
-
-    $.ajax({
-      type: 'POST',
-      url: 'engine.php',
-      data: $('form').serialize(),
-      success: function (html) {
-        formulier_data.html(html);
-      }
-    });
-
-  });
-});
-
-</script>
+  ?>
