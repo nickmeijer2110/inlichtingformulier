@@ -1,6 +1,6 @@
     <div class="logo">
-      <img src="assets/images/logo.svg" class="logo_img"/>
+      <img alt="Logo" src="assets/images/logo.svg" class="logo_img"/>
       <center>
-        <img src="assets/images/logo_tekst.svg" alt="MediaCollege Amsterdam" class="logo_tekst">
+        <img alt="Mediacollege Logo" src="assets/images/logo_tekst.svg" class="logo_tekst">
       </center>
     </div>

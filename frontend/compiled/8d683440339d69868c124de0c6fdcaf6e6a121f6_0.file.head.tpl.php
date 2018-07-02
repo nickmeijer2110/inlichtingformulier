@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-06-12 20:02:49
+/* Smarty version 3.1.30, created on 2018-07-02 21:07:29
   from "C:\Users\Nick\Desktop\Bewijzenmap\Inlichtingformulier\frontend\head.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5b200ac93a2be7_46226761',
+  'unifunc' => 'content_5b3a77f1bded20_76839233',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8d683440339d69868c124de0c6fdcaf6e6a121f6' => 
     array (
       0 => 'C:\\Users\\Nick\\Desktop\\Bewijzenmap\\Inlichtingformulier\\frontend\\head.tpl',
-      1 => 1528826566,
+      1 => 1530558445,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b200ac93a2be7_46226761 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b3a77f1bded20_76839233 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <head>
     <meta charset="utf-8">
     <meta name="theme-color" content="#000">
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="viewport" content="width=device-width" />
     <meta name="apple-mobile-web-app-title" content="Nick Meijer">
     <meta name="author" content="Nick Meijer">
     <meta name="description" content="Wil jij ook worden wat je bent? Het Mediacollege Inlichtenformulier helpt een handje mee!" />
@@ -40,6 +40,12 @@ function content_5b200ac93a2be7_46226761 (Smarty_Internal_Template $_smarty_tpl)
 >
     <?php echo '<script'; ?>
  src="assets/js/waves.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.js"><?php echo '</script'; ?>
 >
 </head>
 <?php }

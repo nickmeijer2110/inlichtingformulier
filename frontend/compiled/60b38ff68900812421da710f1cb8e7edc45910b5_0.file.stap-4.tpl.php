@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-06-28 11:38:57
+/* Smarty version 3.1.30, created on 2018-07-02 21:01:31
   from "C:\Users\Nick\Desktop\Bewijzenmap\Inlichtingformulier\frontend\stap-4.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5b34acb1cb4b32_49539515',
+  'unifunc' => 'content_5b3a768b742777_00200946',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '60b38ff68900812421da710f1cb8e7edc45910b5' => 
     array (
       0 => 'C:\\Users\\Nick\\Desktop\\Bewijzenmap\\Inlichtingformulier\\frontend\\stap-4.tpl',
-      1 => 1530178210,
+      1 => 1530541971,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b34acb1cb4b32_49539515 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b3a768b742777_00200946 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <fieldset id="stap4">
 
@@ -36,7 +36,7 @@ function content_5b34acb1cb4b32_49539515 (Smarty_Internal_Template $_smarty_tpl)
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input name="speciaal_onderwijs[]" id="speciaalonderwijs-nee" type="checkbox" value="nee">
+        <input name="speciaal_onderwijs[]" id="speciaalonderwijs-nee" type="checkbox" value="nee" checked>
         <label for="speciaalonderwijs-nee">
           Nee
         </label>
@@ -58,7 +58,7 @@ function content_5b34acb1cb4b32_49539515 (Smarty_Internal_Template $_smarty_tpl)
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input name="dyslexie[]" id="dyslexie-nee" type="checkbox" value="nee">
+        <input name="dyslexie[]" id="dyslexie-nee" type="checkbox" value="nee" checked>
         <label for="dyslexie-nee">
           Nee
         </label>
@@ -80,7 +80,7 @@ function content_5b34acb1cb4b32_49539515 (Smarty_Internal_Template $_smarty_tpl)
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input name="dyscalculie[]" id="dyscalculie-nee" type="checkbox" value="nee">
+        <input name="dyscalculie[]" id="dyscalculie-nee" type="checkbox" value="nee" checked>
         <label for="dyscalculie-nee">
           Nee
         </label>
@@ -102,7 +102,7 @@ function content_5b34acb1cb4b32_49539515 (Smarty_Internal_Template $_smarty_tpl)
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input name="adhd[]" id="adhd-nee" type="checkbox" value="nee">
+        <input name="adhd[]" id="adhd-nee" type="checkbox" value="nee" checked>
         <label for="adhd-nee">
           Nee
         </label>
@@ -124,7 +124,7 @@ function content_5b34acb1cb4b32_49539515 (Smarty_Internal_Template $_smarty_tpl)
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input name="slechthorendheid[]" id="slechthorendheid-nee" type="checkbox" value="nee">
+        <input name="slechthorendheid[]" id="slechthorendheid-nee" type="checkbox" value="nee" checked>
         <label for="slechthorendheid-nee">
           Nee
         </label>
@@ -146,7 +146,7 @@ function content_5b34acb1cb4b32_49539515 (Smarty_Internal_Template $_smarty_tpl)
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input name="suikerziekte[]" id="suikerziekte-nee" type="checkbox" value="nee">
+        <input name="suikerziekte[]" id="suikerziekte-nee" type="checkbox" value="nee" checked>
         <label for="suikerziekte-nee">
           Nee
         </label>
@@ -158,7 +158,7 @@ function content_5b34acb1cb4b32_49539515 (Smarty_Internal_Template $_smarty_tpl)
 
   <div id="zat" data-balloon-length="small" data-balloon="Is de leerling recent besproken in het extern
    zorg- en adviesteam (ZAT)" data-balloon-pos="right" class="prestaties-2-3">Besproken ZAT
-   <img class="vraagteken-svg" src="assets/images/vraagteken.svg" /></div>
+   <img alt="Vraagteken" class="vraagteken-svg" src="assets/images/vraagteken.svg" /></div>
   <div class="prestaties-1-3">
     <div class="checkbox-groep19">
 
@@ -170,7 +170,7 @@ function content_5b34acb1cb4b32_49539515 (Smarty_Internal_Template $_smarty_tpl)
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input name="zat[]" id="zatbesproken-nee" type="checkbox" value="nee">
+        <input name="zat[]" id="zatbesproken-nee" type="checkbox" value="nee" checked>
         <label for="zatbesproken-nee">
           Nee
         </label>
@@ -192,7 +192,7 @@ function content_5b34acb1cb4b32_49539515 (Smarty_Internal_Template $_smarty_tpl)
       </div>
 
       <div class="mui-checkbox bijzonderheden-checkbox">
-        <input name="overige[]" id="overige-nee" type="checkbox" value="nee">
+        <input name="overige[]" id="overige-nee" type="checkbox" value="nee" checked>
         <label for="overige-nee">
           Nee
         </label>
@@ -204,13 +204,13 @@ function content_5b34acb1cb4b32_49539515 (Smarty_Internal_Template $_smarty_tpl)
 
   <div class="buttons">
     <button tabindex="-1" type="button" id="terug-naar-3" class="btn btn-grijze-outline">
-      <img class="vorige-svg" src="assets/images/vorige.svg" />
+      <img alt="Vorige" class="vorige-svg" src="assets/images/vorige.svg" />
       Vorige
     </button>
 
     <button tabindex="-1" type="button" id="afronden-knop" class="btn btn-roze">
       Gegevens
-      <img class="volgende-svg" src="assets/images/volgende.svg" />
+      <img alt="Volgende" class="volgende-svg" src="assets/images/volgende.svg" />
     </button>
   </div>
 </fieldset>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-06-10 21:59:37
+/* Smarty version 3.1.30, created on 2018-07-02 21:01:31
   from "C:\Users\Nick\Desktop\Bewijzenmap\Inlichtingformulier\frontend\video-achtergrond.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5b1d832943c5c1_47429817',
+  'unifunc' => 'content_5b3a768b1c4bd3_05190666',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b1d832943c5c1_47429817 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b3a768b1c4bd3_05190666 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="overlay"></div>
 <div id="video-player" class="fullscreen-bg">

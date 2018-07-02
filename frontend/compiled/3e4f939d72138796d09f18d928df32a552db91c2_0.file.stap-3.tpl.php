@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-06-28 11:38:57
+/* Smarty version 3.1.30, created on 2018-07-02 21:01:31
   from "C:\Users\Nick\Desktop\Bewijzenmap\Inlichtingformulier\frontend\stap-3.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5b34acb1bbbe43_02954517',
+  'unifunc' => 'content_5b3a768b5c5c24_13051349',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3e4f939d72138796d09f18d928df32a552db91c2' => 
     array (
       0 => 'C:\\Users\\Nick\\Desktop\\Bewijzenmap\\Inlichtingformulier\\frontend\\stap-3.tpl',
-      1 => 1530177747,
+      1 => 1530555330,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b34acb1bbbe43_02954517 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b3a768b5c5c24_13051349 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <fieldset id="stap3">
   <div class="prestaties-2-3"></div>
@@ -255,21 +255,21 @@ function content_5b34acb1bbbe43_02954517 (Smarty_Internal_Template $_smarty_tpl)
     </div>
   </div>
 
-  <label class="anders-opleiding-input" for="anders-opleiding">
+  <label class="anders-opleiding-input" for="skills_toelichting">
     <i class="fa fa-commenting-o"></i>
-    <input name="skills_toelichting" class="anders-opleiding-input" placeholder="Toelichting (niet verplicht)" type="text" autocomplete="off" spellcheck="false" />
+    <input id="skills_toelichting" name="skills_toelichting" class="anders-opleiding-input" placeholder="Toelichting (niet verplicht)" type="text" autocomplete="off" spellcheck="false" />
   </label>
 
   <div class="buttons">
 
   <button tabindex="-1" type="button" id="terug-naar-2" class="btn btn-grijze-outline">
-    <img class="vorige-svg" src="assets/images/vorige.svg" />
+    <img alt="Vorige" class="vorige-svg" src="assets/images/vorige.svg" />
     Vorige
   </button>
 
   <button tabindex="-1" type="button" id="naar-stap-4" class="btn btn-roze">
     Volgende
-    <img class="volgende-svg" src="assets/images/volgende.svg" />
+    <img alt="Volgende" class="volgende-svg" src="assets/images/volgende.svg" />
   </button>
 
   </div>

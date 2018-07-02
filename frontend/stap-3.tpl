@@ -231,21 +231,21 @@
     </div>
   </div>
 
-  <label class="anders-opleiding-input" for="anders-opleiding">
+  <label class="anders-opleiding-input" for="skills_toelichting">
     <i class="fa fa-commenting-o"></i>
-    <input name="skills_toelichting" class="anders-opleiding-input" placeholder="Toelichting (niet verplicht)" type="text" autocomplete="off" spellcheck="false" />
+    <input id="skills_toelichting" name="skills_toelichting" class="anders-opleiding-input" placeholder="Toelichting (niet verplicht)" type="text" autocomplete="off" spellcheck="false" />
   </label>
 
   <div class="buttons">
 
   <button tabindex="-1" type="button" id="terug-naar-2" class="btn btn-grijze-outline">
-    <img class="vorige-svg" src="assets/images/vorige.svg" />
+    <img alt="Vorige" class="vorige-svg" src="assets/images/vorige.svg" />
     Vorige
   </button>
 
   <button tabindex="-1" type="button" id="naar-stap-4" class="btn btn-roze">
     Volgende
-    <img class="volgende-svg" src="assets/images/volgende.svg" />
+    <img alt="Volgende" class="volgende-svg" src="assets/images/volgende.svg" />
   </button>
 
   </div>

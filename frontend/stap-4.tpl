@@ -134,7 +134,7 @@
 
   <div id="zat" data-balloon-length="small" data-balloon="Is de leerling recent besproken in het extern
    zorg- en adviesteam (ZAT)" data-balloon-pos="right" class="prestaties-2-3">Besproken ZAT
-   <img class="vraagteken-svg" src="assets/images/vraagteken.svg" /></div>
+   <img alt="Vraagteken" class="vraagteken-svg" src="assets/images/vraagteken.svg" /></div>
   <div class="prestaties-1-3">
     <div class="checkbox-groep19">
 
@@ -180,13 +180,13 @@
 
   <div class="buttons">
     <button tabindex="-1" type="button" id="terug-naar-3" class="btn btn-grijze-outline">
-      <img class="vorige-svg" src="assets/images/vorige.svg" />
+      <img alt="Vorige" class="vorige-svg" src="assets/images/vorige.svg" />
       Vorige
     </button>
 
     <button tabindex="-1" type="button" id="afronden-knop" class="btn btn-roze">
       Gegevens
-      <img class="volgende-svg" src="assets/images/volgende.svg" />
+      <img alt="Volgende" class="volgende-svg" src="assets/images/volgende.svg" />
     </button>
   </div>
 </fieldset>

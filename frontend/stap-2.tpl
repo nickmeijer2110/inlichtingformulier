@@ -3,7 +3,7 @@
   <!-- Select in huisstijl -->
 
   <div class="custom-select2" style="width:200px;">
-    <img class="opleiding-icoon" src="assets/images/opleiding-hoed.svg" />
+    <img alt="Opleiding icoon" class="opleiding-icoon" src="assets/images/opleiding-hoed.svg" />
   <select name="opleiding_niveau">
     <option>Opleiding</option>
     <option value="vmbo">VMBO</option>
@@ -21,7 +21,7 @@
 
   <!-- Opleiding gekozen? Aanvullende informatie invullen -->
   <div id="opleiding-leeg" class="opleiding-leeg laten-zien">
-    <img class="opleiding-svg" src="assets/images/opleiding.svg" />
+    <img alt="Opleiding" class="opleiding-svg" src="assets/images/opleiding.svg" />
     <span class="start-tekst">Welk opleidingsniveau heeft de leerling momenteel?</span>
   </div>
 
@@ -130,9 +130,9 @@
         </label>
       </div>
 
-      <label class="diploma" for="diploma">
+      <label class="diploma" for="vmbo_diploma">
         <i class="fa fa-calendar-o"></i>
-        <input name="vmbo_diploma" name="diploma" type="text" placeholder="Diploma behaald / Te behalen?" autofocus autocomplete="off" spellcheck="false" />
+        <input id="vmbo_diploma" name="vmbo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autocomplete="off" spellcheck="false" />
       </label>
 
 
@@ -142,43 +142,43 @@
   </div>
 
   <div id="opleiding-2-input" class="opleiding-optie">
-    <label class="diploma" for="diploma">
+    <label class="diploma" for="havo_diploma">
       <i class="fa fa-calendar-o"></i>
-      <input name="havo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autofocus autocomplete="off" spellcheck="false" />
+      <input id="havo_diploma" name="havo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autocomplete="off" spellcheck="false" />
     </label>
 
-    <img class="overgangsbewijs-svg" src="assets/images/overgangsbewijs.svg" />
+    <img alt="Overgangsbewijs" class="overgangsbewijs-svg" src="assets/images/overgangsbewijs.svg" />
     <span class="start-tekst">Overgangsbewijs</span>
 
-    <label class="overgangsbewijs-input" for="van-jaar">
+    <label class="overgangsbewijs-input" for="havo_overgang_van">
       <i class="fa fa-calendar-o"></i>
-      <input name="havo_overgang_van" min="1" max="6" placeholder="Van leerjaar" type="number" autocomplete="off" spellcheck="false" />
+      <input id="havo_overgang_van" name="havo_overgang_van" min="1" max="6" placeholder="Van leerjaar" type="number" autocomplete="off" spellcheck="false" />
     </label>
 
-    <label class="overgangsbewijs-input" for="naar-jaar">
+    <label class="overgangsbewijs-input" for="havo_overgang_naar">
       <i class="fa fa-calendar-o"></i>
-      <input name="havo_overgang_naar" min="1" max="6" placeholder="Naar leerjaar" type="number" autocomplete="off" spellcheck="false" />
+      <input id="havo_overgang_naar" name="havo_overgang_naar" min="1" max="6" placeholder="Naar leerjaar" type="number" autocomplete="off" spellcheck="false" />
     </label>
 
   </div>
 
   <div id="opleiding-3-input" class="opleiding-optie">
-    <label class="diploma" for="diploma">
+    <label class="diploma" for="vwo_diploma">
       <i class="fa fa-calendar-o"></i>
-      <input name="vwo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autofocus autocomplete="off" spellcheck="false" />
+      <input id="vwo_diploma" name="vwo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autocomplete="off" spellcheck="false" />
     </label>
 
-    <img class="overgangsbewijs-svg" src="assets/images/overgangsbewijs.svg" />
+    <img alt="Overgangsbewijs" class="overgangsbewijs-svg" src="assets/images/overgangsbewijs.svg" />
     <span class="start-tekst">Overgangsbewijs</span>
 
-    <label class="overgangsbewijs-input" for="van-jaar">
+    <label class="overgangsbewijs-input" for="vwo_overgang_van">
       <i class="fa fa-calendar-o"></i>
-      <input name="vwo_overgang_van" min="1" max="6" placeholder="Van leerjaar" type="number" autocomplete="off" spellcheck="false" />
+      <input id="vwo_overgang_van" name="vwo_overgang_van" min="1" max="6" placeholder="Van leerjaar" type="number" autocomplete="off" spellcheck="false" />
     </label>
 
-    <label class="overgangsbewijs-input" for="naar-jaar">
+    <label class="overgangsbewijs-input" for="vwo_overgang_naar">
       <i class="fa fa-calendar-o"></i>
-      <input name="vwo_overgang_naar" min="1" max="6" placeholder="Naar leerjaar" type="number" autocomplete="off" spellcheck="false" />
+      <input id="vwo_overgang_naar" name="vwo_overgang_naar" min="1" max="6" placeholder="Naar leerjaar" type="number" autocomplete="off" spellcheck="false" />
     </label>
 
   </div>
@@ -236,16 +236,16 @@
 
   <div id="opleiding-5-input" class="opleiding-optie">
     <label class="anders-opleiding-input" for="anders-opleiding">
-        <img class="opleiding-icoon" src="assets/images/opleiding-hoed.svg" />
-      <input name="anders_opleiding" class="anders-opleiding-input" placeholder="Opleiding" type="text" autocomplete="off" spellcheck="false" />
+        <img alt="Opleiding anders" class="opleiding-icoon" src="assets/images/opleiding-hoed.svg" />
+      <input id="anders-opleiding" name="anders_opleiding" class="anders-opleiding-input" placeholder="Opleiding" type="text" autocomplete="off" spellcheck="false" />
     </label>
 
-    <img class="toelichting-svg" src="assets/images/toelichting.svg" />
+    <img alt="Toelichting" class="toelichting-svg" src="assets/images/toelichting.svg" />
     <span class="start-tekst">Toelichting</span>
 
-    <label class="anders-opleiding-input" for="anders-opleiding">
+    <label class="anders-opleiding-input" for="anders-opleiding-input">
       <i class="fa fa-commenting-o"></i>
-      <input class="anders-opleiding-input" placeholder="Toelichting (niet verplicht)" type="text" autocomplete="off" spellcheck="false" />
+      <input id="anders-opleiding-input" class="anders-opleiding-input" placeholder="Toelichting (niet verplicht)" type="text" autocomplete="off" spellcheck="false" />
     </label>
 
   </div>
@@ -254,13 +254,13 @@
   <div class="buttons">
 
   <button tabindex="-1" type="button" id="terug-naar-1" class="btn btn-grijze-outline">
-    <img class="vorige-svg" src="assets/images/vorige.svg" />
+    <img alt="Vorige" class="vorige-svg" src="assets/images/vorige.svg" />
     Vorige
   </button>
 
   <button tabindex="-1" type="button" id="naar-stap-3" class="btn btn-roze">
     Volgende
-    <img class="volgende-svg" src="assets/images/volgende.svg" />
+    <img alt="Volgende" class="volgende-svg" src="assets/images/volgende.svg" />
   </button>
   </div>
 </fieldset>

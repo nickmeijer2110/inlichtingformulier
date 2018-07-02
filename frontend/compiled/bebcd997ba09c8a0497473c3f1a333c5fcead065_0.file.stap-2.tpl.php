@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-06-28 11:49:14
+/* Smarty version 3.1.30, created on 2018-07-02 21:01:31
   from "C:\Users\Nick\Desktop\Bewijzenmap\Inlichtingformulier\frontend\stap-2.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5b34af1ab44085_53123480',
+  'unifunc' => 'content_5b3a768b423176_93119919',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bebcd997ba09c8a0497473c3f1a333c5fcead065' => 
     array (
       0 => 'C:\\Users\\Nick\\Desktop\\Bewijzenmap\\Inlichtingformulier\\frontend\\stap-2.tpl',
-      1 => 1530178887,
+      1 => 1530555295,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b34af1ab44085_53123480 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b3a768b423176_93119919 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <fieldset id="stap2">
 
   <!-- Select in huisstijl -->
 
   <div class="custom-select2" style="width:200px;">
-    <img class="opleiding-icoon" src="assets/images/opleiding-hoed.svg" />
+    <img alt="Opleiding icoon" class="opleiding-icoon" src="assets/images/opleiding-hoed.svg" />
   <select name="opleiding_niveau">
     <option>Opleiding</option>
     <option value="vmbo">VMBO</option>
@@ -47,7 +47,7 @@ function content_5b34af1ab44085_53123480 (Smarty_Internal_Template $_smarty_tpl)
 
   <!-- Opleiding gekozen? Aanvullende informatie invullen -->
   <div id="opleiding-leeg" class="opleiding-leeg laten-zien">
-    <img class="opleiding-svg" src="assets/images/opleiding.svg" />
+    <img alt="Opleiding" class="opleiding-svg" src="assets/images/opleiding.svg" />
     <span class="start-tekst">Welk opleidingsniveau heeft de leerling momenteel?</span>
   </div>
 
@@ -156,9 +156,9 @@ function content_5b34af1ab44085_53123480 (Smarty_Internal_Template $_smarty_tpl)
         </label>
       </div>
 
-      <label class="diploma" for="diploma">
+      <label class="diploma" for="vmbo_diploma">
         <i class="fa fa-calendar-o"></i>
-        <input name="vmbo_diploma" name="diploma" type="text" placeholder="Diploma behaald / Te behalen?" autofocus autocomplete="off" spellcheck="false" />
+        <input id="vmbo_diploma" name="vmbo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autocomplete="off" spellcheck="false" />
       </label>
 
 
@@ -168,43 +168,43 @@ function content_5b34af1ab44085_53123480 (Smarty_Internal_Template $_smarty_tpl)
   </div>
 
   <div id="opleiding-2-input" class="opleiding-optie">
-    <label class="diploma" for="diploma">
+    <label class="diploma" for="havo_diploma">
       <i class="fa fa-calendar-o"></i>
-      <input name="havo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autofocus autocomplete="off" spellcheck="false" />
+      <input id="havo_diploma" name="havo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autocomplete="off" spellcheck="false" />
     </label>
 
-    <img class="overgangsbewijs-svg" src="assets/images/overgangsbewijs.svg" />
+    <img alt="Overgangsbewijs" class="overgangsbewijs-svg" src="assets/images/overgangsbewijs.svg" />
     <span class="start-tekst">Overgangsbewijs</span>
 
-    <label class="overgangsbewijs-input" for="van-jaar">
+    <label class="overgangsbewijs-input" for="havo_overgang_van">
       <i class="fa fa-calendar-o"></i>
-      <input name="havo_overgang_van" min="1" max="6" placeholder="Van leerjaar" type="number" autocomplete="off" spellcheck="false" />
+      <input id="havo_overgang_van" name="havo_overgang_van" min="1" max="6" placeholder="Van leerjaar" type="number" autocomplete="off" spellcheck="false" />
     </label>
 
-    <label class="overgangsbewijs-input" for="naar-jaar">
+    <label class="overgangsbewijs-input" for="havo_overgang_naar">
       <i class="fa fa-calendar-o"></i>
-      <input name="havo_overgang_naar" min="1" max="6" placeholder="Naar leerjaar" type="number" autocomplete="off" spellcheck="false" />
+      <input id="havo_overgang_naar" name="havo_overgang_naar" min="1" max="6" placeholder="Naar leerjaar" type="number" autocomplete="off" spellcheck="false" />
     </label>
 
   </div>
 
   <div id="opleiding-3-input" class="opleiding-optie">
-    <label class="diploma" for="diploma">
+    <label class="diploma" for="vwo_diploma">
       <i class="fa fa-calendar-o"></i>
-      <input name="vwo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autofocus autocomplete="off" spellcheck="false" />
+      <input id="vwo_diploma" name="vwo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autocomplete="off" spellcheck="false" />
     </label>
 
-    <img class="overgangsbewijs-svg" src="assets/images/overgangsbewijs.svg" />
+    <img alt="Overgangsbewijs" class="overgangsbewijs-svg" src="assets/images/overgangsbewijs.svg" />
     <span class="start-tekst">Overgangsbewijs</span>
 
-    <label class="overgangsbewijs-input" for="van-jaar">
+    <label class="overgangsbewijs-input" for="vwo_overgang_van">
       <i class="fa fa-calendar-o"></i>
-      <input name="vwo_overgang_van" min="1" max="6" placeholder="Van leerjaar" type="number" autocomplete="off" spellcheck="false" />
+      <input id="vwo_overgang_van" name="vwo_overgang_van" min="1" max="6" placeholder="Van leerjaar" type="number" autocomplete="off" spellcheck="false" />
     </label>
 
-    <label class="overgangsbewijs-input" for="naar-jaar">
+    <label class="overgangsbewijs-input" for="vwo_overgang_naar">
       <i class="fa fa-calendar-o"></i>
-      <input name="vwo_overgang_naar" min="1" max="6" placeholder="Naar leerjaar" type="number" autocomplete="off" spellcheck="false" />
+      <input id="vwo_overgang_naar" name="vwo_overgang_naar" min="1" max="6" placeholder="Naar leerjaar" type="number" autocomplete="off" spellcheck="false" />
     </label>
 
   </div>
@@ -245,14 +245,14 @@ function content_5b34af1ab44085_53123480 (Smarty_Internal_Template $_smarty_tpl)
         Leerweg
       </div>
       <div class="mui-checkbox mvi-checkbox">
-        <input name="mbo_leerweg[]" id="leerweg-bol" type="checkbox" value="">
+        <input name="mbo_leerweg[]" id="leerweg-bol" type="checkbox" value="bol">
         <label for="leerweg-bol">
           BOL
         </label>
       </div>
 
       <div class="mui-checkbox mvi-checkbox2 checkbox-bbl">
-        <input name="mbo_leerweg[]" id="leerweg-bbl" type="checkbox" value="">
+        <input name="mbo_leerweg[]" id="leerweg-bbl" type="checkbox" value="bbl">
         <label for="leerweg-bbl">
           BBL
         </label>
@@ -262,16 +262,16 @@ function content_5b34af1ab44085_53123480 (Smarty_Internal_Template $_smarty_tpl)
 
   <div id="opleiding-5-input" class="opleiding-optie">
     <label class="anders-opleiding-input" for="anders-opleiding">
-        <img class="opleiding-icoon" src="assets/images/opleiding-hoed.svg" />
-      <input name="anders_opleiding" class="anders-opleiding-input" placeholder="Opleiding" type="text" autocomplete="off" spellcheck="false" />
+        <img alt="Opleiding anders" class="opleiding-icoon" src="assets/images/opleiding-hoed.svg" />
+      <input id="anders-opleiding" name="anders_opleiding" class="anders-opleiding-input" placeholder="Opleiding" type="text" autocomplete="off" spellcheck="false" />
     </label>
 
-    <img class="toelichting-svg" src="assets/images/toelichting.svg" />
+    <img alt="Toelichting" class="toelichting-svg" src="assets/images/toelichting.svg" />
     <span class="start-tekst">Toelichting</span>
 
-    <label class="anders-opleiding-input" for="anders-opleiding">
+    <label class="anders-opleiding-input" for="anders-opleiding-input">
       <i class="fa fa-commenting-o"></i>
-      <input class="anders-opleiding-input" placeholder="Toelichting (niet verplicht)" type="text" autocomplete="off" spellcheck="false" />
+      <input id="anders-opleiding-input" class="anders-opleiding-input" placeholder="Toelichting (niet verplicht)" type="text" autocomplete="off" spellcheck="false" />
     </label>
 
   </div>
@@ -280,13 +280,13 @@ function content_5b34af1ab44085_53123480 (Smarty_Internal_Template $_smarty_tpl)
   <div class="buttons">
 
   <button tabindex="-1" type="button" id="terug-naar-1" class="btn btn-grijze-outline">
-    <img class="vorige-svg" src="assets/images/vorige.svg" />
+    <img alt="Vorige" class="vorige-svg" src="assets/images/vorige.svg" />
     Vorige
   </button>
 
   <button tabindex="-1" type="button" id="naar-stap-3" class="btn btn-roze">
     Volgende
-    <img class="volgende-svg" src="assets/images/volgende.svg" />
+    <img alt="Volgende" class="volgende-svg" src="assets/images/volgende.svg" />
   </button>
   </div>
 </fieldset>
