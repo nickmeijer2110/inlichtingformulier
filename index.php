@@ -32,7 +32,7 @@
   $formulier->display('stappen-dots.tpl');
 
   // Start formulier
-  echo '<form action="engine.php" method="post">';
+  echo '<form id="inlichtingenformulier" action="engine.php" method="post">';
 
   // Formulier: leerling gegevens
   $formulier->display('stap-1.tpl');
@@ -57,7 +57,6 @@
   $formulier->display('nm-logo-en-js.tpl');
 
   ?>
-
 
   <!-- Submit POST via ajax -->
 
@@ -87,16 +86,15 @@
 
   <!-- Genereer PDF via jsPDF -->
 
-  <script>
+<script>
   $(document).ready(function(){
     var doc = new jsPDF();
 
-// We'll make our own renderer to skip this editor
-var specialElementHandlers = {
- '#editor': function(element, renderer){
-   return true;
- }
-};
+    var specialElementHandlers = {
+     '#editor': function(element, renderer){
+       return true;
+     }
+    };
 
    $('#cmd').click(function () {
        doc.fromHTML($('#formulier-gegevens-pdf').get(0), 15, 15, {
@@ -106,9 +104,18 @@ var specialElementHandlers = {
        doc.save('Inlichtingenformulier.pdf');
      });
 });
+
 </script>
 
-  <?php
+<script>
+function suggestie(suggestie_waarde) {
+  var value = suggestie_waarde;
+  var input = $('#plaats_school');
+  input.val(value);
+}
+</script>
+
+<?php
   echo "</body>";
   echo "</html>";
-  ?>
+?>
