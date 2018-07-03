@@ -16,6 +16,7 @@ Het doel van de opdracht is het overzichtelijk en gemakkelijk maken voor decanen
 -	jQuery
 - JavaScript
 -	HTML(5)
+- PHP
 
 Ik beschik over alle nodige kennis om dit product kwalitatief te bouwen.
 
