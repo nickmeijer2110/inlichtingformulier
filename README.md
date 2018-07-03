@@ -2,7 +2,7 @@
 Ik heb gekozen voor de opdracht “Inlichtingenformulier”, omdat deze opdracht mij het leukste lijkt en deze mij het meest aanspreekt.
 
 # Wat ga ik maken?
-Ik ga een onepage inlichtingenformulier maken die je stapsgewijs in moet vullen. Vervolgens kun je een PDF bekijken en/of downloaden en ook ontvangen in de opgegeven e-mail met de ingevulde informatie. Dit alles zonder databaseverbinding, persoonsgegevens worden dus niet opgeslagen.
+Ik ga een onepage inlichtingenformulier maken die je stapsgewijs in moet vullen. Vervolgens kun je een PDF bekijken en/of downloaden. Dit alles zonder databaseverbinding, persoonsgegevens worden dus niet opgeslagen.
 
 De opdrachtgever voor deze opdracht is Rick Korteman / Mediacollege Amsterdam met als contactperoon Rosmertha Goei.
 
