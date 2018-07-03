@@ -4,17 +4,17 @@
   <span class="start-tekst">School informatie</span>
   <label for="uw_functie">
     <i class="fa fa-graduation-cap"></i>
-    <input id="uw_functie" name="uw_functie" type="text" placeholder="Uw functie" autocomplete="off" spellcheck="false" />
+    <input maxlength="50" id="uw_functie" name="uw_functie" type="text" placeholder="Uw functie" autocomplete="off" spellcheck="false" />
   </label>
 
   <label for="naam_school">
     <i class="fa fa-building-o"></i>
-    <input id="naam_school" name="naam_school" type="text" placeholder="Naam van de school" autocomplete="off" spellcheck="false" />
+    <input maxlength="50" id="naam_school" name="naam_school" type="text" placeholder="Naam van de school" autocomplete="off" spellcheck="false" />
   </label>
 
   <label for="plaats_school">
     <i class="fa fa-map-marker"></i>
-    <input id="plaats_school" name="plaats_school" onkeyup="showHint(this.value)" type="text" placeholder="Plaats van de school" autocomplete="off" spellcheck="false" />
+    <input maxlength="50" id="plaats_school" name="plaats_school" onkeyup="showHint(this.value)" type="text" placeholder="Plaats van de school" autocomplete="off" spellcheck="false" />
   </label>
 
 <div class="suggestie-plaats">

@@ -1,7 +1,7 @@
 <fieldset id="afronden-4">
   <label for="uw_telefoonnummer">
     <i class="fa fa-phone"></i>
-    <input id="uw_telefoonnummer" name="uw_telefoonnummer" type="text" placeholder="Uw telefoonnummer" autocomplete="off" spellcheck="false"/>
+    <input maxlength="20" id="uw_telefoonnummer" name="uw_telefoonnummer" type="text" placeholder="Uw telefoonnummer" autocomplete="off" spellcheck="false"/>
   </label>
   <img alt="Contact" class="telefonisch-contact-svg" src="assets/images/contact.svg" />
   <span class="start-tekst">Is telefonisch contact gewenst?</span>

@@ -130,9 +130,9 @@
         </label>
       </div>
 
-      <label class="diploma" for="vmbo_diploma">
+      <label data-balloon-length="medium" data-balloon="Diploma behaald of te behalen op datum in dd/mm/jjjj formaat." data-balloon-pos="up" class="diploma" for="vmbo_diploma">
         <i class="fa fa-calendar-o"></i>
-        <input id="vmbo_diploma" name="vmbo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autocomplete="off" spellcheck="false" />
+        <input id="vmbo_diploma" maxlength="10" name="vmbo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autocomplete="off" spellcheck="false" />
       </label>
 
 
@@ -142,9 +142,9 @@
   </div>
 
   <div id="opleiding-2-input" class="opleiding-optie">
-    <label class="diploma" for="havo_diploma">
+    <label data-balloon-length="medium" data-balloon="Diploma behaald of te behalen op datum in dd/mm/jjjj formaat." data-balloon-pos="down" class="diploma" for="havo_diploma">
       <i class="fa fa-calendar-o"></i>
-      <input id="havo_diploma" name="havo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autocomplete="off" spellcheck="false" />
+      <input maxlength="10" id="havo_diploma" name="havo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autocomplete="off" spellcheck="false" />
     </label>
 
     <img alt="Overgangsbewijs" class="overgangsbewijs-svg" src="assets/images/overgangsbewijs.svg" />
@@ -163,9 +163,9 @@
   </div>
 
   <div id="opleiding-3-input" class="opleiding-optie">
-    <label class="diploma" for="vwo_diploma">
+    <label data-balloon-length="medium" data-balloon="Diploma behaald of te behalen op datum in dd/mm/jjjj formaat." data-balloon-pos="down" class="diploma" for="vwo_diploma">
       <i class="fa fa-calendar-o"></i>
-      <input id="vwo_diploma" name="vwo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autocomplete="off" spellcheck="false" />
+      <input maxlength="10" id="vwo_diploma" name="vwo_diploma" type="text" placeholder="Diploma behaald / Te behalen?" autocomplete="off" spellcheck="false" />
     </label>
 
     <img alt="Overgangsbewijs" class="overgangsbewijs-svg" src="assets/images/overgangsbewijs.svg" />
