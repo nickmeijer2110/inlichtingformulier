@@ -4,7 +4,7 @@ Ik heb gekozen voor de opdracht “Inlichtingenformulier”, omdat deze opdracht
 # Wat ga ik maken?
 Ik ga een onepage inlichtingenformulier maken die je stapsgewijs in moet vullen. Vervolgens kun je een PDF bekijken en/of downloaden. Dit alles zonder databaseverbinding, persoonsgegevens worden dus niet opgeslagen.
 
-De opdrachtgever voor deze opdracht is Rick Korteman / Mediacollege Amsterdam met als contactperoon Rosmertha Goei.
+De opdrachtgever voor deze opdracht is Mediacollege Amsterdam met als contactperoon Rosmertha Goei.
 
 Deze opdracht is gericht op decanen/mentoren en/of toekomstige leerlingen die dit formulier laten invullen door hun huidige Decaan of Mentor.
 
